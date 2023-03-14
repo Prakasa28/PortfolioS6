@@ -23,9 +23,6 @@ import figma from "./assets/techstack/figma.png";
 import projectImage1 from "./assets/projects/project1.jpg";
 import projectImage2 from "./assets/projects/project2.jpg";
 import projectImage3 from "./assets/projects/project3.jpg";
-import projectImage4 from "./assets/projects/project4.jpg";
-import projectImage5 from "./assets/projects/project5.jpg";
-import projectImage6 from "./assets/projects/project6.jpg";
 
 // Logos
 export const logos = {
@@ -35,10 +32,10 @@ export const logos = {
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Pavan MG",
+  name: "Prakasa",
   tagline: "I build things for web",
   img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  about: `Hi, I'm Prakasa, a frontend developer with a passion for creating beautiful and intuitive user interfaces. I have experience working with various frontend technologies such as HTML, CSS, JavaScript, and React. With a keen eye for design and a strong understanding of user experience, I strive to deliver engaging and impactful digital experiences.`,
 };
 
 // Enter your Social Media URLs here
@@ -52,43 +49,29 @@ export const socialMediaUrl = {
 // Enter your Work Experience here
 export const workDetails = [
   {
-    Position: "Frontend Web Developer",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Full Time",
-    Duration: "Sep 2021 - Dec 2021",
-  },
-  {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
+    Position: "All rounder web developer",
+    Company: `Tellow`,
+    Location: "Amsterdam, The Netherlands",
     Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
-  },
-  {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
+    Duration: "Sep 2022 - Jan 2023",
   },
 ];
 
 // Enter your Education Details here
 export const eduDetails = [
   {
-    Position: "Frontend Development",
-    Company: "Udemy, YouTube, Google, Medium",
-    Location: "Online",
+    Position: "ICT and media design",
+    Company: "Fontys university of applied sciences",
+    Location: "Eindhoven, The Netherlands",
     Type: "Full Time",
-    Duration: "Jan 2022 - Present",
+    Duration: "Feb 2020 - Present",
   },
   {
-    Position: "Bachelor in Electronics & Communication",
-    Company: `Your College Name here`,
-    Location: "Bengaluru",
+    Position: "Diploma in Electronics & Communication",
+    Company: `PSG college of technology`,
+    Location: "Coimbatore,India",
     Type: "Full Time",
-    Duration: "Aug 2020 - Present",
+    Duration: "Jun 2016 - Apr 2019",
   },
 ];
 
@@ -139,37 +122,10 @@ project lorem ipsum generator for dummy content`,
     previewLink: "https://google.com",
     githubLink: "https://github.com",
   },
-  {
-    title: "Project title 4",
-    image: projectImage4,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 5",
-    image: projectImage5,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 6",
-    image: projectImage6,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
 ];
 
 // Enter your Contact Details here
 export const contactDetails = {
-  email: "hi@example.com",
+  email: "prakasa1101@gmail.com",
   phone: "+91 12345 67890",
 };

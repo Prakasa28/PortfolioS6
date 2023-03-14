@@ -19,7 +19,10 @@ function Technologies() {
     figma,
   } = techStackDetails;
   return (
-    <main className="container mx-auto max-width pt-10 pb-20 ">
+    <main
+      className="container mx-auto max-width pt-10 pb-20"
+      style={{ minHeight: "100vh" }}
+    >
       <section>
         <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
           Tech Stack
@@ -33,7 +36,7 @@ function Technologies() {
         <img src={css} title="CSS" alt="" />
         <img src={js} title="JavaScript" alt="" />
         <img src={react} title="React" alt="" />
-        <img src={redux} title="Redux" alt="" />
+        {/* <img src={redux} title="Redux" alt="" /> */}
         <img src={tailwind} title="Tailwind CSS" alt="" />
         <img src={bootstrap} title="Bootstrap" alt="" />
         <img src={sass} title="SASS" alt="" />
@@ -49,7 +52,7 @@ function Technologies() {
         <img src={github} title="Github" alt="Github" />
         <img src={figma} title="Figma" alt="Figma" />
         <img src={npm} title="NPM" alt="NPM" />
-        <img src={postman} title="Postman" alt="Postman" />
+        {/* <img src={postman} title="Postman" alt="Postman" /> */}
       </section>
     </main>
   );

@@ -57,7 +57,14 @@ function Home() {
   }, []);
 
   return (
-    <main className="container mx-auto max-width section md:flex justify-between items-center">
+    <main
+      className="container mx-auto max-width section h-full md:flex justify-between items-center"
+      style={{
+        minHeight: "80vh",
+        display: "flex",
+        flexDirection: "row",
+      }}
+    >
       <div>
         <h1
           ref={h11}
@@ -78,8 +85,14 @@ function Home() {
           {tagline}
         </h2>
       </div>
-      <div className="mt-5 md:mt-0">
-        <img ref={myimageref} className="w-1/2 md:ml-auto" src={img} alt="Pavan MG" />
+
+      <div className="mt-5 w-56 h-56 overflow-hidden rounded-full border-2 border-gradient  md:mt-0 ">
+        <img
+          ref={myimageref}
+          className="w-full h-full object-cover md:ml-auto"
+          src={img}
+          alt="Prakasa"
+        />
       </div>
     </main>
   );

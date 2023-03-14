@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { logos, socialMediaUrl } from "../Details";
+import { socialMediaUrl } from "../Details";
+import { personalDetails } from "../Details";
 
 function Header() {
+  const { name } = personalDetails;
   const [isOpen, setIsOpen] = useState(false);
   const { linkdein, github, twitter } = socialMediaUrl;
   const toggleClass = () => {
@@ -13,7 +15,9 @@ function Header() {
     <header className="container mx-auto md:flex justify-between py-2 max-width">
       <div className="flex justify-between items-center py-2 md:py-10">
         <NavLink to="/">
-          <img className="w-14" src={logos.logogradient} alt="logo" />
+          <h1 className="text-2xl bg-clip-text bg-gradient text-transparent md:text-3xl xl:text-3xl xl:leading-tight font-bold">
+            {name}
+          </h1>
         </NavLink>
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
@@ -33,7 +37,11 @@ function Header() {
           </svg>
         </div>
       </div>
-      <nav className={` ${!isOpen ? "hidden" : null} text-center md:flex justify-between`}>
+      <nav
+        className={` ${
+          !isOpen ? "hidden" : null
+        } text-center md:flex justify-between`}
+      >
         <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
           <li className="pb-1 md:pb-0">
             <NavLink to="/" onClick={toggleClass}>
