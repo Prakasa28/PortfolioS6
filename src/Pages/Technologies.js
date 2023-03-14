@@ -7,7 +7,7 @@ function Technologies() {
     css,
     js,
     react,
-    redux,
+    // redux,
     tailwind,
     bootstrap,
     sass,
@@ -15,7 +15,7 @@ function Technologies() {
     git,
     github,
     npm,
-    postman,
+    // postman,
     figma,
   } = techStackDetails;
   return (
