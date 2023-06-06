@@ -1,14 +1,15 @@
-import { BrowserRouter as Router } from "react-router-dom";
-import Header from "./Components/Header";
-// import Footer from "./Components/Footer";
-import Content from "./Components/Content";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import GroupProject from "./Pages/GroupProject";
+import Index from "./Pages/index";
 
 function App() {
   return (
     <Router>
-      <Header />
-      <Content />
-      {/* <Footer /> */}
+      <Routes>
+        {/* Other routes */}
+        <Route path="/project" element={<GroupProject />} />
+        <Route path="/index" element={<Index />} />
+      </Routes>
     </Router>
   );
 }
