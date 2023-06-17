@@ -98,9 +98,26 @@ function InternationalProject() {
           <div className="flex flex-row flex-row-reverse gap-5 items-center">
             <div style={{ flex: "1" }}>
               <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                {internationalProjectData.secondPhase.heading}
+                {internationalProjectData.secondPhase.question}
               </p>
               <br />
+              <div className="flex flex-row gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.secondPhase.subHeadingMethod}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.secondPhase.methods}
+                </p>
+              </div>
+              <br />
+              <div className="flex flex-col gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.secondPhase.subHeadingWhy}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.secondPhase.why}
+                </p>
+              </div>
 
               <br />
               <div className="flex flex-col gap-2">
@@ -137,6 +154,180 @@ function InternationalProject() {
                 src={internationalProjectData.secondPhase.image}
                 alt="Prototype"
               />
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <div className="flex flex-row gap-5 items-center">
+            <div style={{ flex: "1" }}>
+              <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                {internationalProjectData.persona.heading}
+              </p>
+              <br />
+              <div className="flex flex-col gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.persona.subHeadingWhy}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.persona.why}
+                </p>
+              </div>
+
+              <br />
+              <div className="flex flex-col gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.persona.subHeadingHow}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.persona.how}
+                </p>
+              </div>
+              <br />
+              <div className="flex flex-col gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.persona.resultHeading}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.persona.result}
+                </p>
+              </div>
+              <br />
+
+              <div className="flex flex-col gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.persona.conclusionHeading}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.persona.conclusion}
+                </p>
+              </div>
+              <br />
+            </div>
+            <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
+              <img
+                src={internationalProjectData.persona.image}
+                alt="Prototype"
+              />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <div className="flex flex-row flex-row-reverse gap-5 items-center">
+            <div style={{ flex: "1" }}>
+              <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                {internationalProjectData.problemStatement.heading}
+              </p>
+              <br />
+              <div className="flex flex-col gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.problemStatement.subHeadingWhy}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.problemStatement.why}
+                </p>
+              </div>
+
+              <br />
+              <div className="flex flex-col gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.problemStatement.subHeadingHow}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.problemStatement.how}
+                </p>
+              </div>
+              <br />
+              <div className="flex flex-col gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.problemStatement.resultHeading}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.problemStatement.result}
+                </p>
+              </div>
+              <br />
+
+              <div className="flex flex-col gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.problemStatement.conclusionHeading}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.problemStatement.conclusion}
+                </p>
+              </div>
+              <br />
+            </div>
+            <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
+              <img
+                src={internationalProjectData.problemStatement.image}
+                alt="Prototype"
+              />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <div className="flex flex-row  gap-5 items-center">
+            <div style={{ flex: "1" }}>
+              <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                {internationalProjectData.pov.heading}
+              </p>
+              <br />
+              <div className="flex flex-col gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.pov.subHeadingWhy}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.pov.why}
+                </p>
+              </div>
+
+              <br />
+              <div className="flex flex-col gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.pov.subHeadingHow}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.pov.how}
+                </p>
+              </div>
+              <br />
+              <div className="flex flex-col gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.pov.resultHeading}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.pov.result}
+                </p>
+              </div>
+              <br />
+
+              <div className="flex flex-col gap-2">
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  {internationalProjectData.pov.conclusionHeading}
+                </p>
+                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                  {internationalProjectData.pov.conclusion}
+                </p>
+              </div>
+              <br />
+            </div>
+            <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
+              <img src={internationalProjectData.pov.image} alt="Prototype" />
             </div>
           </div>
         </div>
