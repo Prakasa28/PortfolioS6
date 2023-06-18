@@ -98,22 +98,19 @@ export const projectDetails = [
   {
     title: "Portfolio-Individual Project",
     image: projectImage1,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: ``,
     path: "/individualProject",
   },
   {
     title: "Noise control-Group Project",
     image: projectImage2,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: ``,
     path: "/groupProject",
   },
   {
     title: "Empathic Building-International Project",
     image: projectImage3,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: ``,
     path: "/internationalProject",
   },
 ];

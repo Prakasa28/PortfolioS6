@@ -637,6 +637,10 @@ function IndividualProject() {
             {individualProjectData.reflectionHeading}
           </h1>
           <div className="container mx-auto max-width pt-6 pb-16">
+            <p className="text-xl text-dark-heading  font-bold">
+              {individualProjectData.reflectionSubHeading}
+            </p>
+            <br />
             <p
               className="text-lg text-dark-heading   "
               dangerouslySetInnerHTML={{

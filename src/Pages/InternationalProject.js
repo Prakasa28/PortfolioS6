@@ -282,7 +282,7 @@ function InternationalProject() {
           <br />
           <br />
 
-          <section id="Problem-Statement:">
+          <section id="Problem-Statement">
             <div className="flex flex-row flex-row-reverse gap-5 items-center">
               <div style={{ flex: "1" }}>
                 <p className="text-xl text-dark-heading    font-bold">
@@ -622,6 +622,10 @@ function InternationalProject() {
           </h1>
 
           <div className="container mx-auto max-width pt-6 pb-16">
+            <p className="text-xl text-dark-heading  font-bold">
+              {internationalProjectData.reflectionSubHeading}
+            </p>
+            <br />
             <p
               className="text-lg text-dark-heading   "
               dangerouslySetInnerHTML={{
