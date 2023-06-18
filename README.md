@@ -1,7 +1,5 @@
 # Portfolio Website
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 This is a portfolio website built using React and Tailwind CSS. It showcases my skills, projects, and experiences in a visually appealing manner.
 
 ## Table of Contents
