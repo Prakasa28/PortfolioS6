@@ -8,12 +8,10 @@ function Project({ title, image, description, path }) {
   };
   return (
     <Link to={path} onClick={handleClick}>
-      <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900">
+      <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300">
         <img src={image} alt="" loading="lazy" />
-        <div className="dark:bg-dark-card p-4">
-          <h1 className="dark:text-light-heading font-semibold text-lg pt-1">
-            {title}
-          </h1>
+        <div className=" p-4">
+          <h1 className=" font-semibold text-lg pt-1">{title}</h1>
           <p className="text-content pt-4 font-light">{description}</p>
         </div>
       </article>
