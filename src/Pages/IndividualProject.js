@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "../Components/Header";
 import individualProjectData from "../Data/IndividualProjectData";
 import ExpertInterview from "../Pdf/IPexpertInterview.pdf";
@@ -9,6 +10,22 @@ import UsabilityTest from "../Pdf/IPusabilityTest.pdf";
 import ProjectPlan from "../Pdf/IPprojectplan.pdf";
 
 function IndividualProject() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollToSection = () => {
+      const section = location.hash.substr(1); // Remove the leading '#'
+      const targetElement = document.getElementById(section);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    if (location.hash) {
+      // Wait for the component to render before scrolling
+      setTimeout(scrollToSection, 0);
+    }
+  }, [location]);
   return (
     <div>
       <Header />

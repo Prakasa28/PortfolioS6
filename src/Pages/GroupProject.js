@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "../Components/Header";
 import groupProjectData from "../Data/GroupProjectData";
 import DesignProcess from "../Components/DesignProcess";
@@ -15,6 +16,22 @@ import UserTestReport from "../Pdf/usertestreport.pdf";
 import SubQuestoins from "../Pdf/GPsubquestions.pdf";
 
 function GroupProject() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollToSection = () => {
+      const section = location.hash.substr(1); // Remove the leading '#'
+      const targetElement = document.getElementById(section);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    if (location.hash) {
+      // Wait for the component to render before scrolling
+      setTimeout(scrollToSection, 0);
+    }
+  }, [location]);
   return (
     <div>
       <Header />
@@ -231,7 +248,7 @@ function GroupProject() {
                       src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FbEwjKbB2OMDHxowklid8K0%2FResearch-Questions-Brainstorm%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DGqfs4xmkbnx8LYsy-1"
                       title="Example"
                       width="100%"
-                      height="300"
+                      height="400"
                     />
                   </div>
                 </div>
@@ -1260,6 +1277,10 @@ function GroupProject() {
           </h1>
           <div className="container mx-auto max-width pt-6 pb-16">
             <div className="mt-20">
+              <p className="text-xl text-dark-heading  font-bold">
+                {groupProjectData.reflectionSubHeading}
+              </p>
+              <br />
               <p
                 className="text-lg text-dark-heading   "
                 dangerouslySetInnerHTML={{

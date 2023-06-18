@@ -36,7 +36,7 @@ const groupProjectData = {
     subHeadingHow: "How:",
     how: "Each person in the group thought of their own question based on the main research question, and we used a voting system to decide which questions were the best. After the voting, we grouped together similar questions and formed clusters. Then, as a group, we chose the most appropriate questions from those clusters.",
     resultHeading: "Result: ",
-    results: "The sub question can be seen in the document below.",
+    results: "The sub questions can be seen in the document below.",
     conclusionHeading: "Conclusion/recommendation:",
     conclusion:
       "In conclusion, when we worked together to brainstorm and create sub-questions, it helped us in our research. These sub-questions will guide us as we explore the main research question thoroughly. They will show us the way and help us discover new things and gain more knowledge in the field.",
@@ -265,6 +265,7 @@ const groupProjectData = {
   },
 
   reflectionHeading: "Reflection",
+  reflectionSubHeading: "Reflection – Used Gibbs reflection cycle:",
   reflection:
     "Being part of a diverse group was a great experience for me. Collaborating with individuals from different backgrounds, such as UI/UX designers and programmers, provided a great opportunity to learn from their unique expertise. Our assignment focused on raising awareness among PE teachers about the harmful effects of loud sounds in gym halls on hearing abilities.</br></br>Initially, I didn't fully grasp the seriousness of the problem we were addressing. However, as the project progressed, I realized the significant impact that loud noise can have.</br></br> One of the project's strengths was the availability of extensive research on the impact of high noise levels in gym halls for PE teachers. We were able to gather valuable insights from existing documents and we were able to get valuable insights by interviewing experts who is already working on the project for years. However, a downside was that we couldn't personally experience the effects of high noise levels in a gym hall, which limited our understanding to some extent. </br></br>During the project, we encountered obstacles, one of which was finding our target audience for testing our prototype. Instead, we had to settle for testing with a non-intended audience, which may have influenced the test results. Despite this setback, we tried to gather useful feedback and provide further recommendations. </br></br>Working with highly professional group members was a valuable opportunity for personal growth and learning. I acquired knowledge and experience in researching and designing, and I appreciated the chance to contribute to the team's goals. We had a well-distributed workload, and everyone played a role based on their expertise. However, at times, I felt that my suggestions and recommendations were not given enough attention, which made me reflect on how I could better communicate my ideas effectively.</br></br>Looking ahead, my goal is to further develop my design skills and deepen my understanding of design-related problems. I want to improve my professionalism by consistently meeting deadlines and enhancing my communication skills. By doing so, I believe I can become a more effective team member and make a meaningful impact in future projects.",
 

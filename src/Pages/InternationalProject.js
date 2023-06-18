@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import ReactPlayer from "react-player";
 import Header from "../Components/Header";
 import internationalProjectData from "../Data/InternationalProjectData";
@@ -6,6 +7,23 @@ import internationalProjectData from "../Data/InternationalProjectData";
 function InternationalProject() {
   const externalVideoUrl = "https://youtu.be/nnT1Ob5OEzc";
   const mainVideoUrl = "https://youtu.be/SfCb_ypBv00";
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollToSection = () => {
+      const section = location.hash.substr(1); // Remove the leading '#'
+      const targetElement = document.getElementById(section);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    if (location.hash) {
+      // Wait for the component to render before scrolling
+      setTimeout(scrollToSection, 0);
+    }
+  }, [location]);
 
   return (
     <div>
