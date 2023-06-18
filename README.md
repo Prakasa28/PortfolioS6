@@ -11,8 +11,6 @@ This is a portfolio website built using React and Tailwind CSS. It showcases my 
 - [Customization](#customization)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
 
 ## Installation
@@ -21,11 +19,24 @@ To run this project locally, follow these steps:
 
 1. Clone the repository to your local machine:
 
-git clone <repository-url> 2. Navigate to the project directory:
+```
+git clone <repository-url>
+
+```
+
+2. Navigate to the project directory:
+
+```
 cd project-directory
 
+```
+
 3. Install the required dependencies using npm:
-   npm install
+
+```
+ npm install
+
+```
 
 ## Usage
 
