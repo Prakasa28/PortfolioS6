@@ -26,6 +26,10 @@ const groupProjectData = {
     subHeading: "Discover phase",
   },
 
+  introHeading: "Introduction",
+  introText:
+    "Welcome to this project page where I will present my contribution to the group project. The main goal is to help PE teachers become aware of the high noise level in the gym hall. Here, I will showcase all the work I have done independently, as well as my contributions to the group activities. Feel free to explore and learn more about my work.",
+
   teamcanvas: "Team Canvas",
   teamcanvasText:
     "The team canvas activity helped us understand each other better as a team. We shared our goals, values, strengths, weaknesses, needs, and expectations. It brought us closer and made us work well together. We communicated openly and built trust. This activity set the stage for successful teamwork and collaboration.",

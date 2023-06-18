@@ -20,119 +20,133 @@ function GroupProject() {
       <main style={{ minHeight: "100vh" }}>
         <div className="container mx-auto max-width pt-6 pb-16">
           <div className="flex flex-col justify-center items-center mt-32 mb-32">
-            <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-7xl xl:leading-tight font-bold">
+            <h1 className="text-2xl text-dark-heading  text-4xl xl:text-7xl  font-bold">
               {groupProjectData.group1.heading}
             </h1>
-            <p className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-lg xl:leading-tight m-3">
+            <p className="text-2xl text-dark-heading  text-4xl xl:text-lg  m-3">
               {groupProjectData.group1.subHeading}
             </p>
           </div>
-
-          {/* <iframe
-            style="border: 1px solid rgba(0, 0, 0, 0.1);"
-            width="800"
-            height="450"
-            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FM3E2VGFKRj9ETcwruuv4UA%2FTeam-Canvas%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DgqLLjQv7uyyB0V7G-1"
-            allowfullscreen
-          ></iframe> */}
-          {/* <Iframe
-            url="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FM3E2VGFKRj9ETcwruuv4UA%2FTeam-Canvas%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DgqLLjQv7uyyB0V7G-1"
-            position="absolute"
-            width="800"
-            height="450"
-            id="myId"
-            className="myClassname"
-            styles={{ height: "25px", border: "1px solid rgba(0, 0, 0, 0.1)" }}
-          /> */}
-
-          <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-2xl xl:leading-tight font-bold">
-            {groupProjectData.teamcanvas}
-          </h1>
-          <br />
-          <p
-            className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight "
-            dangerouslySetInnerHTML={{
-              __html: groupProjectData.teamcanvasText,
-            }}
-          ></p>
-          <br />
-          <IframeComponent
-            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FM3E2VGFKRj9ETcwruuv4UA%2FTeam-Canvas%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DgqLLjQv7uyyB0V7G-1"
-            title="Example"
-            width="100%"
-            height="450"
-          />
-          <br />
-          <br />
-          <br />
-
-          <div className="flex flex-row gap-5">
-            <div>
-              <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-2xl xl:leading-tight font-bold">
-                {groupProjectData.projectagreement}
-              </h1>
-              <br />
-              <p
-                className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight "
-                dangerouslySetInnerHTML={{
-                  __html: groupProjectData.projectagreementText,
-                }}
-              ></p>
-              <br />
-              <div className="flex flex-row ">
-                <p className="mr-2 font-bold text-lg">Project Agreement:</p>
-                {"   "}
-                <a
-                  href={ProjectAgreement}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-lg"
-                >
-                  View agreement
-                </a>
-              </div>
-            </div>
-            <div>
-              <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-2xl xl:leading-tight font-bold">
-                {groupProjectData.projectplan}
-              </h1>
-              <br />
-              <p
-                className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight "
-                dangerouslySetInnerHTML={{
-                  __html: groupProjectData.projectplanText,
-                }}
-              ></p>
-              <br />
-              <div className="flex flex-row ">
-                <p className="mr-2 font-bold text-lg">Project Plan:</p>
-                {"   "}
-                <a
-                  href={ProjectPlan}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-lg"
-                >
-                  View plan
-                </a>
-              </div>
-            </div>
+          <div>
+            <h1 className="text-xl text-dark-heading font-bold">
+              {groupProjectData.introHeading}
+            </h1>
+            <br />
+            <p className="text-lg text-dark-heading">
+              {" "}
+              {groupProjectData.introText}
+            </p>
+            <br />
+            <br />
+            <br />
           </div>
+          <section id="Team-Canvas">
+            <h1 className="text-xl text-dark-heading font-bold">
+              {groupProjectData.teamcanvas}
+            </h1>
+            <br />
+            <p
+              className="text-lg text-dark-heading"
+              dangerouslySetInnerHTML={{
+                __html: groupProjectData.teamcanvasText,
+              }}
+            ></p>
+            <br />
+            <IframeComponent
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FM3E2VGFKRj9ETcwruuv4UA%2FTeam-Canvas%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DgqLLjQv7uyyB0V7G-1"
+              title="Example"
+              width="100%"
+              height="450"
+            />
+          </section>
+          <br />
+          <br />
+          <br />
+
+          <section id="Project-Plan">
+            <div className="flex flex-row gap-5">
+              <div>
+                <h1 className="text-xl text-dark-heading   font-bold">
+                  {groupProjectData.projectagreement}
+                </h1>
+                <br />
+                <p
+                  className="text-lg text-dark-heading    "
+                  dangerouslySetInnerHTML={{
+                    __html: groupProjectData.projectagreementText,
+                  }}
+                ></p>
+                <br />
+
+                <div>
+                  <a
+                    href={ProjectAgreement}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      className="bg-gradient"
+                      style={{
+                        fontSize: "16px",
+                        padding: "10px 20px",
+                        border: "none",
+                        borderRadius: "5px",
+                      }}
+                    >
+                      <p className="font-bold"> View document</p>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h1 className="text-xl text-dark-heading font-bold">
+                  {groupProjectData.projectplan}
+                </h1>
+                <br />
+                <p
+                  className="text-lg text-dark-heading    "
+                  dangerouslySetInnerHTML={{
+                    __html: groupProjectData.projectplanText,
+                  }}
+                ></p>
+                <br />
+
+                <div>
+                  <a
+                    href={ProjectPlan}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      className="bg-gradient"
+                      style={{
+                        fontSize: "16px",
+                        padding: "10px 20px",
+                        border: "none",
+                        borderRadius: "5px",
+                      }}
+                    >
+                      <p className="font-bold"> View document</p>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <div
             div
             className="flex flex-col justify-center items-center mt-20 mb-20"
           >
-            <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-2xl xl:leading-tight font-bold">
+            <h1 className="text-2xl text-dark-heading    font-bold">
               {groupProjectData.group2.heading}
             </h1>
             <DesignProcess />
           </div>
-          {/* Add your content here */}
         </div>
         <h1
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mt-16 mb-16 bg-gradient "
+          className="text-2xl text-dark-heading  text-4xl   font-bold mt-16 mb-16 bg-gradient "
           style={{
-            //   backgroundColor: "#0ea5e9",
             padding: "4rem",
             width: "100%",
             textAlign: "center",
@@ -143,7 +157,7 @@ function GroupProject() {
         <div className="container mx-auto max-width pt-6 pb-16">
           <div>
             <p
-              className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight "
+              className="text-lg text-dark-heading    "
               dangerouslySetInnerHTML={{
                 __html: groupProjectData.group4.discoverPhase,
               }}
@@ -151,71 +165,78 @@ function GroupProject() {
             <br />
             <br />
 
-            {/* //fix */}
-            <section id="secondphase">
+            <section id="Literature-Study">
               <div className="flex flex-row flex-row-reverse gap-5 items-center">
                 <div style={{ flex: "1" }}>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                  <p className="text-lg text-dark-heading    font-bold">
                     {groupProjectData.firstPhase.question}
                   </p>
                   <br />
                   <div className="flex flex-row gap-2">
-                    <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                    <p className="text-lg text-dark-heading    font-bold">
                       {groupProjectData.firstPhase.subHeading}
                     </p>
-                    <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                    <p className="text-lg text-dark-heading   ">
                       {groupProjectData.firstPhase.methods}
                     </p>
                   </div>
                   <br />
                   <div className="flex flex-col gap-2">
-                    <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                    <p className="text-lg text-dark-heading    font-bold">
                       {groupProjectData.firstPhase.subheadingWhy}
                     </p>
-                    <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                    <p className="text-lg text-dark-heading   ">
                       {groupProjectData.firstPhase.why}
                     </p>
                   </div>
                   <br />
                   <div className="flex flex-col gap-2">
-                    <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                    <p className="text-lg text-dark-heading    font-bold">
                       {groupProjectData.firstPhase.subHeadingHow}
                     </p>
-                    <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                    <p className="text-lg text-dark-heading   ">
                       {groupProjectData.firstPhase.how}
                     </p>
                   </div>
                   <br />
                   <div className="flex flex-col gap-2">
-                    <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                    <p className="text-lg text-dark-heading    font-bold">
                       {groupProjectData.firstPhase.resultHeading}
                     </p>
-                    <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                    <p className="text-lg text-dark-heading   ">
                       {groupProjectData.firstPhase.results}
                     </p>
                   </div>
                   <br />
 
                   <div className="flex flex-col gap-2">
-                    <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
+                    <p className="text-lg text-dark-heading    font-bold">
                       {groupProjectData.firstPhase.conclusionHeading}
                     </p>
-                    <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+                    <p className="text-lg text-dark-heading   ">
                       {groupProjectData.firstPhase.conclusion}
                     </p>
                   </div>
                   <br />
 
-                  <div className="flex flex-col text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight ">
-                    <div className="flex flex-row">
-                      <p className="mr-2 font-bold">Literature study:</p>
-                      {"   "}
+                  <div className="flex flex-col text-lg text-dark-heading    ">
+                    <div>
                       <a
                         href={LiteratureStudy}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Read more
+                        <button
+                          className="bg-gradient"
+                          style={{
+                            fontSize: "16px",
+                            padding: "10px 20px",
+                            border: "none",
+                            borderRadius: "5px",
+                          }}
+                        >
+                          <p className="font-bold"> View document</p>
+                        </button>
                       </a>
                     </div>
                   </div>
@@ -225,11 +246,109 @@ function GroupProject() {
                     src={groupProjectData.firstPhase.image}
                     alt="Prototype"
                   />
+                  <a
+                    href="https://cmdmethods.nl/cards/library/literature-study"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <p className="text-lg text-dark-heading    font-bold">
+                      Image source
+                    </p>
+                  </a>
                 </div>
               </div>
             </section>
 
-            {/* fix */}
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <section id="Competitive-analysis">
+              <div className="flex flex-row gap-5 items-center">
+                <div style={{ flex: "1" }}>
+                  <p className="text-lg text-dark-heading    font-bold">
+                    {groupProjectData.questionTwo.question}
+                  </p>
+                  <br />
+                  <div className="flex flex-row gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.questionTwo.subHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.questionTwo.methods}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.questionTwo.subheadingWhy}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.questionTwo.why}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.questionTwo.subHeadingHow}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.questionTwo.how}
+                    </p>
+                  </div>
+
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.questionTwo.resultHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.questionTwo.results}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.questionTwo.conclusionHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.questionTwo.conclusion}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col text-lg text-dark-heading    ">
+                    <div>
+                      <a
+                        href={CompetitiveAnalysis}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button
+                          className="bg-gradient"
+                          style={{
+                            fontSize: "16px",
+                            padding: "10px 20px",
+                            border: "none",
+                            borderRadius: "5px",
+                          }}
+                        >
+                          <p className="font-bold"> View document</p>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
+                  <img
+                    src={groupProjectData.questionTwo.image}
+                    alt="Prototype"
+                  />
+                </div>
+              </div>
+            </section>
 
             <br />
             <br />
@@ -238,176 +357,104 @@ function GroupProject() {
             <br />
             <br />
 
-            <div className="flex flex-row gap-5 items-center">
-              <div style={{ flex: "1" }}>
-                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                  {groupProjectData.questionTwo.question}
-                </p>
-                <br />
-                <div className="flex flex-row gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.questionTwo.subHeading}
+            <section id="User-interview">
+              <div className="flex flex-row flex-row-reverse gap-5 items-center">
+                <div style={{ flex: "1" }}>
+                  <p className="text-lg text-dark-heading    font-bold">
+                    {groupProjectData.questionThree.question}
                   </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.questionTwo.methods}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.questionTwo.subheadingWhy}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.questionTwo.why}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.questionTwo.subHeadingHow}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.questionTwo.how}
-                  </p>
-                </div>
+                  <br />
+                  <div className="flex flex-row gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.questionThree.subHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.questionThree.methods}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.questionThree.subheadingWhy}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.questionThree.why}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.questionThree.subHeadingHow}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.questionThree.how}
+                    </p>
+                  </div>
 
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.questionTwo.resultHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.questionTwo.results}
-                  </p>
+                  <br />
+
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.questionThree.resultHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.questionThree.results}
+                    </p>
+                  </div>
+                  <br />
+
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.questionThree.conclusionHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.questionThree.conclusion}
+                    </p>
+                  </div>
+
+                  <br />
+                  <div className="flex flex-col text-lg text-dark-heading    ">
+                    <div>
+                      <a
+                        href={Interview}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button
+                          className="bg-gradient"
+                          style={{
+                            fontSize: "16px",
+                            padding: "10px 20px",
+                            border: "none",
+                            borderRadius: "5px",
+                          }}
+                        >
+                          <p className="font-bold"> View document</p>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.questionTwo.conclusionHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.questionTwo.conclusion}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight ">
-                  <div className="flex flex-row">
-                    <p className="mr-2 font-bold">Competitive analysis:</p>
-                    {"   "}
-                    <a
-                      href={CompetitiveAnalysis}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Read more
-                    </a>
+                <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
+                  <div className="flex flex-col">
+                    <div style={{ flex: "1", alignItems: "center" }}>
+                      <img
+                        src={groupProjectData.questionThree.image}
+                        alt="Prototype"
+                      />
+                    </div>
+                    <div style={{ flex: "1", alignItems: "center" }}>
+                      <IframeComponent
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F1W3etVKZ2IdlwSM5JUonb6%2FInterview-Questions%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DdekREdA0X1k0CyEU-1"
+                        title="Example"
+                        width="100%"
+                        height="400"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-              <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
-                <img src={groupProjectData.questionTwo.image} alt="Prototype" />
-              </div>
-            </div>
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <div className="flex flex-row flex-row-reverse gap-5 items-center">
-              <div style={{ flex: "1" }}>
-                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                  {groupProjectData.questionThree.question}
-                </p>
-                <br />
-                <div className="flex flex-row gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.questionThree.subHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.questionThree.methods}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.questionThree.subheadingWhy}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.questionThree.why}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.questionThree.subHeadingHow}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.questionThree.how}
-                  </p>
-                </div>
-
-                <br />
-
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.questionThree.resultHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.questionThree.results}
-                  </p>
-                </div>
-                <br />
-
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.questionThree.conclusionHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.questionThree.conclusion}
-                  </p>
-                </div>
-
-                <br />
-                <div className="flex flex-col text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight ">
-                  <div className="flex flex-row">
-                    <p className="mr-2 font-bold">User interview:</p>
-                    {"   "}
-                    <a
-                      href={Interview}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Read more
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
-                {/* <img
-                  src={groupProjectData.questionThree.image}
-                  alt="Prototype"
-                /> */}
-                <div className="flex flex-col">
-                  <div style={{ flex: "1", alignItems: "center" }}>
-                    <img
-                      src={groupProjectData.questionThree.image}
-                      alt="Prototype"
-                    />
-                  </div>
-                  <div style={{ flex: "1", alignItems: "center" }}>
-                    <IframeComponent
-                      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F1W3etVKZ2IdlwSM5JUonb6%2FInterview-Questions%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DdekREdA0X1k0CyEU-1"
-                      title="Example"
-                      width="100%"
-                      height="400"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+            </section>
 
             <br />
             <br />
@@ -419,9 +466,8 @@ function GroupProject() {
         </div>
 
         <h1
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mt-16 mb-16 bg-gradient "
+          className="text-2xl text-dark-heading  text-4xl   font-bold mt-16 mb-16 bg-gradient "
           style={{
-            //   backgroundColor: "#0ea5e9",
             padding: "4rem",
             width: "100%",
             textAlign: "center",
@@ -431,194 +477,182 @@ function GroupProject() {
         </h1>
 
         <div className="container mx-auto max-width pt-6 pb-16">
-          <div>
-            <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-              {groupProjectData.secondPhase.text}
-            </p>
-            {/* <img src={groupProjectData.secondPhase.image} alt="Prototype" /> */}
+          <section id="Story-board">
+            <div>
+              <p className="text-lg text-dark-heading   ">
+                {groupProjectData.secondPhase.text}
+              </p>
 
-            <div className="flex flex-row gap-5 items-center mt-24">
-              <div style={{ flex: "1" }}>
-                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                  {groupProjectData.secondPhase.question}
-                </p>
-                <br />
-                <div className="flex flex-row gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.secondPhase.subHeading}
+              <div className="flex flex-row gap-5 items-center mt-24">
+                <div style={{ flex: "1" }}>
+                  <p className="text-lg text-dark-heading    font-bold">
+                    {groupProjectData.secondPhase.question}
                   </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.secondPhase.methods}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.secondPhase.subheadingWhy}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.secondPhase.why}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.secondPhase.subHeadingHow}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.secondPhase.how}
-                  </p>
-                </div>
+                  <br />
+                  <div className="flex flex-row gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.secondPhase.subHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.secondPhase.methods}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.secondPhase.subheadingWhy}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.secondPhase.why}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.secondPhase.subHeadingHow}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.secondPhase.how}
+                    </p>
+                  </div>
 
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.secondPhase.resultHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.secondPhase.results}
-                  </p>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.secondPhase.resultHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.secondPhase.results}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.secondPhase.conclusionHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.secondPhase.conclusion}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col text-lg text-dark-heading    "></div>
                 </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.secondPhase.conclusionHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.secondPhase.conclusion}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight ">
-                  {/* <div className="flex flex-row">
-                    <p className="mr-2 font-bold">Storyboard:</p>
-                    {"   "}
-                    <a
-                      href={CompetitiveAnalysis}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Read more
-                    </a>
-                  </div> */}
-                </div>
-              </div>
-              <div style={{ height: "30", flex: "1", alignItems: "center" }}>
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
+                <div style={{ height: "30", flex: "1", alignItems: "center" }}>
                   <div
                     style={{
                       display: "flex",
-                      flexWrap: "wrap",
-                      justifyContent: "center",
+                      flexDirection: "column",
+                      alignItems: "center",
                     }}
                   >
-                    <img
-                      src={groupProjectData.secondPhase.image1}
-                      alt="Prototype"
-                      style={{ height: "300px", margin: "5px" }}
-                    />
-                    <img
-                      src={groupProjectData.secondPhase.image2}
-                      alt="Prototype"
-                      style={{ height: "300px", margin: "5px" }}
-                    />
-                    <img
-                      src={groupProjectData.secondPhase.image3}
-                      alt="Prototype"
-                      style={{ height: "300px", margin: "5px" }}
-                    />
-                  </div>
-                  <div style={{ display: "flex", justifyContent: "center" }}>
-                    <img
-                      src={groupProjectData.secondPhase.image4}
-                      alt="Prototype"
-                      style={{ height: "300px", margin: "5px" }}
-                    />
-                    <img
-                      src={groupProjectData.secondPhase.image5}
-                      alt="Prototype"
-                      style={{ height: "300px", margin: "5px" }}
-                    />
+                    <div
+                      style={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <img
+                        src={groupProjectData.secondPhase.image1}
+                        alt="Prototype"
+                        style={{ height: "300px", margin: "5px" }}
+                      />
+                      <img
+                        src={groupProjectData.secondPhase.image2}
+                        alt="Prototype"
+                        style={{ height: "300px", margin: "5px" }}
+                      />
+                      <img
+                        src={groupProjectData.secondPhase.image3}
+                        alt="Prototype"
+                        style={{ height: "300px", margin: "5px" }}
+                      />
+                    </div>
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                      <img
+                        src={groupProjectData.secondPhase.image4}
+                        alt="Prototype"
+                        style={{ height: "300px", margin: "5px" }}
+                      />
+                      <img
+                        src={groupProjectData.secondPhase.image5}
+                        alt="Prototype"
+                        style={{ height: "300px", margin: "5px" }}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
           <div className="mt-24">
-            <div className="flex flex-row flex-row-reverse  gap-5 items-center">
-              <div style={{ flex: "1" }}>
-                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                  {groupProjectData.finalisingConcept.question}
-                </p>
-                <br />
+            <section id="Finalising-concept">
+              <div className="flex flex-row flex-row-reverse  gap-5 items-center">
+                <div style={{ flex: "1" }}>
+                  <p className="text-xl text-dark-heading  font-bold">
+                    {groupProjectData.finalisingConcept.question}
+                  </p>
+                  <br />
 
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.finalisingConcept.subHeadingHow}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.finalisingConcept.how}
-                  </p>
-                </div>
-
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.finalisingConcept.resultHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.finalisingConcept.results}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.finalisingConcept.conclusionHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.finalisingConcept.conclusion}
-                  </p>
-                </div>
-
-                <br />
-              </div>
-              {/* <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
-                <img src={groupProjectData.thirdPhase.image} alt="Prototype" />
-              </div> */}
-              <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
-                <div className="flex flex-col gap-4">
-                  <div style={{ flex: "1", alignItems: "center" }}>
-                    <img
-                      src={groupProjectData.finalisingConcept.image}
-                      alt="Prototype"
-                      style={{ maxHeight: "400px" }}
-                    />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.finalisingConcept.subHeadingHow}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.finalisingConcept.how}
+                    </p>
                   </div>
-                  <div style={{ flex: "1", alignItems: "center" }}>
-                    <IframeComponent
-                      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FRJZBLueS8ST0gA67ZdHmeh%2FFinalizing-Concept%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DkeSbwDFzMWml47AS-1"
-                      title="Example"
-                      width="100%"
-                      height="400"
-                    />
+
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.finalisingConcept.resultHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.finalisingConcept.results}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.finalisingConcept.conclusionHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.finalisingConcept.conclusion}
+                    </p>
+                  </div>
+
+                  <br />
+                </div>
+
+                <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
+                  <div className="flex flex-col gap-4">
+                    <div style={{ flex: "1", alignItems: "center" }}>
+                      <img
+                        src={groupProjectData.finalisingConcept.image}
+                        alt="Prototype"
+                        style={{ maxHeight: "400px" }}
+                      />
+                    </div>
+                    <div style={{ flex: "1", alignItems: "center" }}>
+                      <IframeComponent
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FRJZBLueS8ST0gA67ZdHmeh%2FFinalizing-Concept%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DkeSbwDFzMWml47AS-1"
+                        title="Example"
+                        width="100%"
+                        height="400"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
         </div>
 
         <h1
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mt-16 mb-16 bg-gradient "
+          className="text-2xl text-dark-heading  text-4xl   font-bold mt-16 mb-16 bg-gradient "
           style={{
-            //   backgroundColor: "#0ea5e9",
             padding: "4rem",
             width: "100%",
             textAlign: "center",
@@ -628,212 +662,228 @@ function GroupProject() {
         </h1>
 
         <div className="container mx-auto max-width pt-6 pb-16">
-          <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
+          <p className="text-lg text-dark-heading   ">
             {groupProjectData.thirdPhaseText}
           </p>
 
           <div className="mt-24">
-            <div className="flex flex-row flex-row-reverse gap-5 items-center">
-              <div style={{ flex: "1" }}>
-                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                  {groupProjectData.thirdPhaseMoscow.question}
-                </p>
-                <br />
-                <div className="flex flex-row gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.thirdPhaseMoscow.subHeading}
+            <section id="Finalising-features">
+              <div className="flex flex-row flex-row-reverse gap-5 items-center">
+                <div style={{ flex: "1" }}>
+                  <p className="text-xl text-dark-heading font-bold">
+                    {groupProjectData.thirdPhaseMoscow.question}
                   </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.thirdPhaseMoscow.methods}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.thirdPhaseMoscow.subheadingWhy}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.thirdPhaseMoscow.why}
-                  </p>
-                </div>
-                <br />
-
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.thirdPhaseMoscow.subHeadingHow}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.thirdPhaseMoscow.how}
-                  </p>
-                </div>
-
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.thirdPhaseMoscow.resultHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.thirdPhaseMoscow.results}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.thirdPhaseMoscow.conclusionHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.thirdPhaseMoscow.conclusion}
-                  </p>
-                </div>
-
-                <br />
-              </div>
-              {/* <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
-                <img src={groupProjectData.thirdPhase.image} alt="Prototype" />
-              </div> */}
-              <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
-                <div className="flex flex-col">
-                  <div style={{ flex: "1", alignItems: "center" }}>
-                    <img
-                      src={groupProjectData.thirdPhaseMoscow.image}
-                      alt="Prototype"
-                      style={{ Width: "100%", Height: "100%" }}
-                    />
+                  <br />
+                  <div className="flex flex-row gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.thirdPhaseMoscow.subHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.thirdPhaseMoscow.methods}
+                    </p>
                   </div>
-                  <div style={{ flex: "1", alignItems: "center" }}>
-                    <IframeComponent
-                      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FxVPbjUqw85PQHT3FQNmOiZ%2FMosCow%3Ftype%3Dwhiteboard%26t%3DRfY32DsDeNnOVPoj-1"
-                      title="Example"
-                      width="100%"
-                      height="400"
-                    />
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.thirdPhaseMoscow.subheadingWhy}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.thirdPhaseMoscow.why}
+                    </p>
+                  </div>
+                  <br />
+
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.thirdPhaseMoscow.subHeadingHow}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.thirdPhaseMoscow.how}
+                    </p>
+                  </div>
+
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.thirdPhaseMoscow.resultHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.thirdPhaseMoscow.results}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.thirdPhaseMoscow.conclusionHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.thirdPhaseMoscow.conclusion}
+                    </p>
+                  </div>
+
+                  <br />
+                </div>
+
+                <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
+                  <div className="flex flex-col">
+                    <div style={{ flex: "1", alignItems: "center" }}>
+                      <img
+                        src={groupProjectData.thirdPhaseMoscow.image}
+                        alt="Prototype"
+                        style={{ Width: "100%", Height: "100%" }}
+                      />
+                      <a
+                        href="https://www.komododigital.co.uk/insights/how-to-use-the-moscow-prioritisation-technique-to-execute-software-projects/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <p className="text-lg text-dark-heading    font-bold">
+                          Image source
+                        </p>
+                      </a>
+                    </div>
+                    <br />
+                    <div style={{ flex: "1", alignItems: "center" }}>
+                      <IframeComponent
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FxVPbjUqw85PQHT3FQNmOiZ%2FMosCow%3Ftype%3Dwhiteboard%26t%3DRfY32DsDeNnOVPoj-1"
+                        title="Example"
+                        width="100%"
+                        height="400"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
 
           <div className="mt-24">
-            <div className="flex flex-row  gap-5 items-center">
-              <div style={{ flex: "1" }}>
-                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                  {groupProjectData.thirdPhase.question}
-                </p>
-                <br />
-                <div className="flex flex-row gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.thirdPhase.subHeading}
+            <section id="Mood-board">
+              <div className="flex flex-row  gap-5 items-center">
+                <div style={{ flex: "1" }}>
+                  <p className="text-lg text-dark-heading    font-bold">
+                    {groupProjectData.thirdPhase.question}
                   </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.thirdPhase.methods}
-                  </p>
+                  <br />
+                  <div className="flex flex-row gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.thirdPhase.subHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.thirdPhase.methods}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.thirdPhase.subheadingWhy}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.thirdPhase.why}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.thirdPhase.subHeadingHow}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.thirdPhase.how}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.thirdPhase.resultHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.thirdPhase.results}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.thirdPhase.conclusionHeading}
+                    </p>
+                    <p
+                      className="text-lg text-dark-heading  "
+                      dangerouslySetInnerHTML={{
+                        __html: groupProjectData.thirdPhase.conclusion,
+                      }}
+                    ></p>
+                  </div>
+                  <br />
                 </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.thirdPhase.subheadingWhy}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.thirdPhase.why}
-                  </p>
+                <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
+                  <img
+                    src={groupProjectData.thirdPhase.image}
+                    alt="Prototype"
+                  />
                 </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.thirdPhase.subHeadingHow}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.thirdPhase.how}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.thirdPhase.resultHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.thirdPhase.results}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.thirdPhase.conclusionHeading}
-                  </p>
-                  <p
-                    className="text-lg text-dark-heading dark:text-light-heading md:xl:leading-tight"
-                    dangerouslySetInnerHTML={{
-                      __html: groupProjectData.thirdPhase.conclusion,
-                    }}
-                  ></p>
-                </div>
-                <br />
               </div>
-              <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
-                <img src={groupProjectData.thirdPhase.image} alt="Prototype" />
-              </div>
-            </div>
+            </section>
           </div>
 
           <div className="mt-24">
-            <div className="flex flex-row flex-row-reverse  gap-5 items-center">
-              <div style={{ flex: "1" }}>
-                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                  {groupProjectData.userflow.question}
-                </p>
-                <br />
-                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                  {groupProjectData.userflow.heading}
-                </p>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.userflow.subheadingWhy}
+            <section id="User-flow">
+              <div className="flex flex-row flex-row-reverse  gap-5 items-center">
+                <div style={{ flex: "1" }}>
+                  <p className="text-lg text-dark-heading    font-bold">
+                    {groupProjectData.userflow.question}
                   </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.userflow.why}
+                  <br />
+                  <p className="text-lg text-dark-heading    font-bold">
+                    {groupProjectData.userflow.heading}
                   </p>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.userflow.subheadingWhy}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.userflow.why}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.userflow.subHeadingHow}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.userflow.how}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.userflow.resultHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.userflow.results}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.userflow.conclusionHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.userflow.conclusion}
+                    </p>
+                  </div>
+                  <br />
                 </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.userflow.subHeadingHow}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.userflow.how}
-                  </p>
+                <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
+                  <img src={groupProjectData.userflow.image} alt="Prototype" />
                 </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.userflow.resultHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.userflow.results}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.userflow.conclusionHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.userflow.conclusion}
-                  </p>
-                </div>
-                <br />
               </div>
-              <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
-                <img src={groupProjectData.userflow.image} alt="Prototype" />
-              </div>
-            </div>
+            </section>
           </div>
         </div>
 
         <h1
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mt-16 mb-16 bg-gradient "
+          className="text-2xl text-dark-heading  text-4xl   font-bold mt-16 mb-16 bg-gradient "
           style={{
-            //   backgroundColor: "#0ea5e9",
             padding: "4rem",
             width: "100%",
             textAlign: "center",
@@ -842,157 +892,166 @@ function GroupProject() {
           {groupProjectData.fourthPhaseHeading}
         </h1>
 
-        <div className="container mx-auto max-width pt-6 pb-16">
-          <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-            {groupProjectData.fourthPhaseText}
-          </p>
-          <div className="mt-24">
-            <div className="flex flex-row flex-row-reverse gap-5 items-center">
-              <div style={{ flex: "1" }}>
-                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                  {groupProjectData.fourthPhase.question}
-                </p>
-                <br />
-                <div className="flex flex-row gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.fourthPhase.subHeading}
+        <section id="Prototyping">
+          <div className="container mx-auto max-width pt-6 pb-16">
+            <p className="text-lg text-dark-heading   ">
+              {groupProjectData.fourthPhaseText}
+            </p>
+            <div className="mt-24">
+              <div className="flex flex-row flex-row-reverse gap-5 items-center">
+                <div style={{ flex: "1" }}>
+                  <p className="text-lg text-dark-heading    font-bold">
+                    {groupProjectData.fourthPhase.question}
                   </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.fourthPhase.methods}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.fourthPhase.subheadingWhy}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.fourthPhase.why}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.fourthPhase.subHeadingHow}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.fourthPhase.how}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.fourthPhase.resultHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.fourthPhase.results}
-                  </p>
-                </div>
-                <br />
+                  <br />
+                  <div className="flex flex-row gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.fourthPhase.subHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.fourthPhase.methods}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.fourthPhase.subheadingWhy}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.fourthPhase.why}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.fourthPhase.subHeadingHow}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.fourthPhase.how}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.fourthPhase.resultHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.fourthPhase.results}
+                    </p>
+                  </div>
+                  <br />
 
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.fourthPhase.conclusionHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.fourthPhase.conclusion}
-                  </p>
-                </div>
-                <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.fourthPhase.conclusionHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.fourthPhase.conclusion}
+                    </p>
+                  </div>
+                  <br />
 
-                <div className="flex flex-col text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight ">
-                  <div className="flex flex-row">
-                    <p className="mr-2 font-bold">Prototype: </p>
-                    {"   "}
-                    <a
-                      href={Prototype}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Read more
-                    </a>
+                  <div className="flex flex-col text-lg text-dark-heading    ">
+                    <div>
+                      <a
+                        href={Prototype}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button
+                          className="bg-gradient"
+                          style={{
+                            fontSize: "16px",
+                            padding: "10px 20px",
+                            border: "none",
+                            borderRadius: "5px",
+                          }}
+                        >
+                          <p className="font-bold"> View document</p>
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
-                {/* <img src={groupProjectData.fourthPhase.image} alt="Prototype" /> */}
-
-                <div className="flex flex-col">
-                  <div style={{ flex: "1", alignItems: "center" }}>
-                    <img
-                      src={groupProjectData.fourthPhase.image}
-                      alt="Prototype"
-                      style={{ Height: "300px;" }}
-                    />
-                  </div>
-                  <div style={{ flex: "1", alignItems: "center" }}>
-                    <IframeComponent
-                      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGGHb3WXmJlHUf2uv1AedNB%2FExposure-limit%3Ftype%3Ddesign%26node-id%3D0%253A1%26t%3DU5lzDRoviM6qFP1L-1"
-                      title="Example"
-                      width="100%"
-                      height="400"
-                    />
+                <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
+                  <div className="flex flex-col">
+                    <div style={{ flex: "1", alignItems: "center" }}>
+                      <img
+                        src={groupProjectData.fourthPhase.image}
+                        alt="Prototype"
+                        style={{ Height: "300px;" }}
+                      />
+                    </div>
+                    <div style={{ flex: "1", alignItems: "center" }}>
+                      <IframeComponent
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGGHb3WXmJlHUf2uv1AedNB%2FExposure-limit%3Ftype%3Ddesign%26node-id%3D0%253A1%26t%3DU5lzDRoviM6qFP1L-1"
+                        title="Example"
+                        width="100%"
+                        height="400"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <div className="container mx-auto max-width pt-6 pb-16">
           <div className="mt-24">
-            <div className="flex flex-row  gap-5 items-center">
-              <div style={{ flex: "1" }}>
-                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                  {groupProjectData.c4.heading}
-                </p>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.c4.subHeadingHow}
+            <section id="C4-Model">
+              <div className="flex flex-row  gap-5 items-center">
+                <div style={{ flex: "1" }}>
+                  <p className="text-xl text-dark-heading    font-bold">
+                    {groupProjectData.c4.heading}
                   </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.c4.how}
-                  </p>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.c4.subHeadingHow}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.c4.how}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.c4.resultHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.c4.results}
+                    </p>
+                  </div>
+                  <br />
+
+                  <div>
+                    <a href={C4model} target="_blank" rel="noopener noreferrer">
+                      <button
+                        className="bg-gradient"
+                        style={{
+                          fontSize: "16px",
+                          padding: "10px 20px",
+                          border: "none",
+                          borderRadius: "5px",
+                        }}
+                      >
+                        <p className="font-bold"> View document</p>
+                      </button>
+                    </a>
+                  </div>
+                  <br />
                 </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.c4.resultHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.c4.results}
-                  </p>
+                <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
+                  <img src={groupProjectData.c4.image} alt="Prototype" />
                 </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.c4.noteHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.c4.note}
-                  </p>
-                  <a
-                    href={C4model}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-bold"
-                  >
-                    View document
-                  </a>
-                </div>
-                <br />
               </div>
-              <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
-                <img src={groupProjectData.c4.image} alt="Prototype" />
-              </div>
-            </div>
+            </section>
           </div>
         </div>
         <h1
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mt-16 mb-16 bg-gradient "
+          className="text-2xl text-dark-heading  text-4xl   font-bold mt-16 mb-16 bg-gradient "
           style={{
-            //   backgroundColor: "#0ea5e9",
             padding: "4rem",
             width: "100%",
             textAlign: "center",
@@ -1003,94 +1062,108 @@ function GroupProject() {
 
         <div className="container mx-auto max-width pt-6 pb-16">
           <div className="mt-24">
-            <div className="flex flex-row flex-row-reverse  gap-5 items-center">
-              <div style={{ flex: "1" }}>
-                <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                  {groupProjectData.userTest.question}
-                </p>
-                <br />
-                <div className="flex flex-row gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.userTest.subHeading}
+            <section id="Usability-Testing">
+              <div className="flex flex-row flex-row-reverse  gap-5 items-center">
+                <div style={{ flex: "1" }}>
+                  <p className="text-lg text-dark-heading    font-bold">
+                    {groupProjectData.userTest.question}
                   </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.userTest.methods}
-                  </p>
+                  <br />
+                  <div className="flex flex-row gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.userTest.subHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.userTest.methods}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.userTest.subheadingWhy}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.userTest.why}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.userTest.subHeadingHow}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.userTest.how}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.userTest.resultHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.userTest.results}
+                    </p>
+                  </div>
+                  <br />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-lg text-dark-heading    font-bold">
+                      {groupProjectData.userTest.conclusionHeading}
+                    </p>
+                    <p className="text-lg text-dark-heading   ">
+                      {groupProjectData.userTest.conclusion}
+                    </p>
+                  </div>
+                  <br />
+                  <div>
+                    <a
+                      href={UserTestReport}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button
+                        className="bg-gradient"
+                        style={{
+                          fontSize: "16px",
+                          padding: "10px 20px",
+                          border: "none",
+                          borderRadius: "5px",
+                        }}
+                      >
+                        <p className="font-bold"> View document</p>
+                      </button>
+                    </a>
+                  </div>
                 </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.userTest.subheadingWhy}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.userTest.why}
-                  </p>
+                <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
+                  <img src={groupProjectData.userTest.image} alt="Prototype" />
                 </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.userTest.subHeadingHow}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.userTest.how}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.userTest.resultHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.userTest.results}
-                  </p>
-                </div>
-                <br />
-                <div className="flex flex-col gap-2">
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight font-bold">
-                    {groupProjectData.userTest.conclusionHeading}
-                  </p>
-                  <p className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight">
-                    {groupProjectData.userTest.conclusion}
-                  </p>
-                </div>
-                <br />
-                <a
-                  href={UserTestReport}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-bold"
-                >
-                  Usability Test report
-                </a>
               </div>
-              <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
-                <img src={groupProjectData.userTest.image} alt="Prototype" />
-              </div>
-            </div>
+            </section>
           </div>
         </div>
 
-        <h1
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mt-16 mb-16 bg-gradient "
-          style={{
-            //   backgroundColor: "#0ea5e9",
-            padding: "4rem",
-            width: "100%",
-            textAlign: "center",
-          }}
-        >
-          {groupProjectData.reflectionHeading}
-        </h1>
-        <div className="container mx-auto max-width pt-6 pb-16">
-          <div className="mt-20">
-            <p
-              className="text-lg text-dark-heading dark:text-light-heading md: xl:leading-tight"
-              dangerouslySetInnerHTML={{
-                __html: groupProjectData.reflection,
-              }}
-            ></p>
+        <section id="Reflection">
+          <h1
+            className="text-2xl text-dark-heading  text-4xl   font-bold mt-16 mb-16 bg-gradient "
+            style={{
+              padding: "4rem",
+              width: "100%",
+              textAlign: "center",
+            }}
+          >
+            {groupProjectData.reflectionHeading}
+          </h1>
+          <div className="container mx-auto max-width pt-6 pb-16">
+            <div className="mt-20">
+              <p
+                className="text-lg text-dark-heading   "
+                dangerouslySetInnerHTML={{
+                  __html: groupProjectData.reflection,
+                }}
+              ></p>
+            </div>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   );

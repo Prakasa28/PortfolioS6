@@ -15,6 +15,9 @@ const individualProjectData = {
       "I made this portfolio to display the projects I worked on during my sixth semester of ICT and Media Design. It's an important tool for me as I search for internships opportunities later in the future. The main purpose of this portfolio is to showcase the projects I worked on, both as part of a team and on my own, during the semester six in ICT and Media Design. Feel free to explore and learn more about my work. You'll see the whole process of how I designed and developed this portfolio.",
     subHeading: "Initial phase",
   },
+  projectPlanHeading: "Project Plan",
+  projectPlanText:
+    "The project plan includes information about the assignment, stakeholders, agreements, approach, planning, financials, and risks. Where I worked on developing the plan. It provides a roadmap for the project, outlining objectives, tasks, and timelines.",
   group3: {
     introText:
       "During the early stage of this project, my primary objective was to develop the main research question and its sub-questions. After formulating them, I sought feedback from my semester guides. They provided me with valuable suggestions, including the need to make the research question more specific and reduce the number of questions due to time limitations. Additionally, they advised me to employ CMD methods to address these questions effectively.",

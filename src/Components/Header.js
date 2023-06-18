@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { socialMediaUrl } from "../Details";
+// import { socialMediaUrl } from "../Details";
 import { personalDetails } from "../Details";
 
 function Header() {
   const { name } = personalDetails;
   const [isOpen, setIsOpen] = useState(false);
-  const { linkdein, github, twitter } = socialMediaUrl;
+  // const { linkdein, github, twitter } = socialMediaUrl;
   const toggleClass = () => {
     setIsOpen(!isOpen);
   };
@@ -49,27 +49,28 @@ function Header() {
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
-            <NavLink to="/about" onClick={toggleClass}>
-              About
+            <NavLink to="/groupProject" onClick={toggleClass}>
+              Group Project
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
-            <NavLink to="/technologies" onClick={toggleClass}>
-              Technologies
+            <NavLink to="/individualProject" onClick={toggleClass}>
+              Individual Projects
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
-            <NavLink to="/projects" onClick={toggleClass}>
-              Projects
+            <NavLink to="/internationalProject" onClick={toggleClass}>
+              International Project
             </NavLink>
           </li>
-          <li>
+
+          {/* <li>
             <NavLink to="/contact" onClick={toggleClass}>
               Contact
             </NavLink>
-          </li>
+          </li> */}
         </ul>
-        <ul className="flex justify-evenly items-center my-5 md:my-0 md:space-x-5 md:mr-5">
+        {/* <ul className="flex justify-evenly items-center my-5 md:my-0 md:space-x-5 md:mr-5">
           <li>
             <a href={twitter} target="_blank" rel="noreferrer noopener">
               <svg
@@ -116,7 +117,7 @@ function Header() {
               </svg>
             </a>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </header>
   );

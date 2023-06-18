@@ -96,31 +96,25 @@ export const techStackDetails = {
 // Enter your Project Details here
 export const projectDetails = [
   {
-    title: "Project title 1",
+    title: "Portfolio-Individual Project",
     image: projectImage1,
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    path: "/individualProject",
   },
   {
-    title: "Project title 2",
+    title: "Noise control-Group Project",
     image: projectImage2,
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    path: "/groupProject",
   },
   {
-    title: "Project title 3",
+    title: "Empathic Building-International Project",
     image: projectImage3,
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    path: "/internationalProject",
   },
 ];
 

@@ -3,10 +3,23 @@ import EmapthyMapImage from "../assets/images/empathymap.png";
 import PersonaImage from "../assets/images/persona.png";
 import ProblemStatementImage from "../assets/images/problemstatement.png";
 import PovTableImage from "../assets/images/pov.png";
+import FinalisingConceptImage from "../assets/images/finalisingconcept.png";
+import StoryBoardImage from "../assets/images/InPstoryboard.png";
+import StorylineImage from "../assets/images/storyline.png";
+import GroupPicture from "../assets/images/grouppicture.jpg";
 
 const InternationalProjectData = {
+  internationalProjectHeading: "Empathic Building",
+  internationalProjectSubheading:
+    "Semester6 Media Design - International project",
+  introHeading: "Introduction",
+  introText:
+    "Welcome to this page where I will showcase the work I did for the international project. Most of the tasks I worked on were done in a group. The main goal of the project was to come up with a concept for an 'Empathic Building' to make the Fontys TQ building more empathetic. Here, you will see how we approached the problem and what our final concept was. <br/> <br/> I worked in a team with students from different countries in Europe. This mix of cultures brought together different perspectives, experiences, and skills. Each team member contributed their own ideas, languages, and ways of working, which created an exciting and inclusive environment. This diversity helped us be more creative, understand each other globally, and come up with a wide range of ideas and solutions. Our team's varied backgrounds made collaboration, learning, and personal growth really strong.",
+  introImage: GroupPicture,
+
   discoverHeading: "Discover Phase",
-  discoverPhaseIntroText: "",
+  discoverPhaseIntroText:
+    "During the discovery phase, our group conducted an initial analysis to understand the problems faced by students in the TQ building. We gathered information from the stakeholders, and our main goal was to identify the difficulties students encounter.",
 
   firstPhase: {
     heading: "Initial problem analysis:",
@@ -22,7 +35,8 @@ const InternationalProjectData = {
   },
 
   defineHeading: "Define Phase",
-  definePhaseIntroText: "",
+  definePhaseIntroText:
+    "During the define phase, we used the information we gathered in the discovery phase to create an empathy map. This helped us understand our target audience better. We also took input from stakeholders to develop a persona, which represents a typical user. We then created a problem statement to clearly define the issue we want to solve. To gain different perspectives on the problem, we analysed the problem statement and created a POV table. Finally, we used all the insights we gathered to finalize the concept.",
 
   secondPhase: {
     question:
@@ -83,6 +97,57 @@ const InternationalProjectData = {
       "In conclusion, a POV table is a valuable tool that allows us to gain a comprehensive understanding of a problem by considering different perspectives. By analysing the problem statement and documenting user needs and insights, we can identify root causes and explore various solutions.",
     image: PovTableImage,
   },
+
+  finalisingConcept: {
+    heading: "Finalising concept: ",
+    subHeadingHow: "How: ",
+    how: "We developed the final concept by working together and brainstorming ideas during a collaborative process. We started with a problem statement and a point of view (POV) and generated various ideas. Finally, with the guidance of our mentor, we discussed and evaluated the options, leading us to select the solution that became our final concept.",
+    resultHeading: "Result: ",
+    result:
+      "The university block has colourful paths that guide students to different areas. These paths also have words that guides students where they lead and what to expect. An advanced AI system in the block uses RFID, face recognition, sensors, and user profiles. It tracks students, recognizes their faces, and optimizes resources. It also recommends personalized things based on students' moods and interests. The system adjusts lighting to match their emotions, creating a dynamic environment that improves their well-being and productivity.",
+    conclusionHeading: "Conclusion/recommendation ",
+    conclusion:
+      "The next step is to create a visual representation of the concept.",
+    image: FinalisingConceptImage,
+  },
+
+  ideateHeading: "Ideate Phase",
+  ideatePhaseIntroText:
+    "During the Ideate phase, after coming up with the final concept, we created a storyboard. A storyboard is a visual representation of the concept using simple drawings. It helps us tell the story of our concept in a clear and understandable way.",
+
+  storyBoard: {
+    question: "How can the concept be effectively visualized?",
+    subHeadingMethod: "Method:",
+    methods: "Storyboard",
+    subHeadingWhy: "Why:",
+    why: " We chose to create a storyboard to simplify the project's main concept and make it easily understandable and shareable. By using visual illustrations, the storyboard transforms complex concepts into clear images that require no explanation.",
+    subHeadingHow: "How: ",
+    how: "To create our storyboard, we collaborated as a group and developed the storyline step by step, building upon the main concept. We then translated the story into a visual format, similar to a comic book, where we drew each scene to represent the sequence of events. This process allowed us to visually organize the story and ensure that all the essential elements were captured in the storyboard.",
+    resultHeading: "Result: ",
+    result: "The result can be seen on the right side.",
+    conclusionHeading: "Conclusion/recommendation ",
+    conclusion:
+      "In conclusion, by creating the storyboard we were able to effectively visualize and communicate the concept. where the storyboard panels showcase the sequence of events, characters, and key elements of the story. The storyboard provides a clear and engaging representation of the concept, making it easier for others to understand and connect with the story we want to tell.",
+    image: StoryBoardImage,
+  },
+
+  prototypeHeading: "Prototype Phase",
+  prototypeIntroText:
+    "During the prototype phase, we wanted to present our concept visually, so we created two videos. One video was made by me, while the main video for the presentation was filmed and edited by Oliver. We wrote the script for the video together as a group. For my video, which was made for the stakeholder presentation, I created my own storyline based on the storyboard and concept and made a comic video.",
+
+  prototype: {
+    heading: "Concept video: ",
+    subHeadingHow: "How: ",
+    how: "I created the comic video by developing my own script and story line based on the concept and storyboard. I used Discord's mid-journey feature to generate sequential images for the video. Then, I edited the video using a Comic maker tool. I added text bubbles, visual effects, and other artistic elements to enhance the frames. I focused on maintaining a smooth flow and engaging the viewer throughout the narrative. By combining these tools and my creativity, I transformed my script and storyboard into a comic video.",
+    resultHeading: "Result: ",
+    result: "The video can be viewed on the right side.",
+  },
+  mainVideoHeading: "Final concept video:",
+  scriptImage: StorylineImage,
+
+  reflectionHeading: "Reflection",
+  reflection:
+    "During the project, our main aim was to create an Empathic Building concept. It was an amazing experience working together with people from different cultures. I had the chance to teach them new things and, at the same time, learn from their expertise. <br/><br/>The project didn't last long; it only took one week, which means we had five days to work on it. This short timeframe made it challenging to come up with a concept for the given problem. At first, the project's scope was a bit confusing, but after talking with the stakeholders, it became much clearer. <br/><br/>One remarkable thing about the project was the great freedom we had. We were told to use our imagination and not worry if the required technology didn't exist. The stakeholders just wanted us to come up with the best concept we could think of. This lack of restrictions allowed us to be creative and come up with new and innovative ideas. <br/><br/>The project's biggest strength was the freedom we had and the diverse expertise within our team. We had people from different educational backgrounds, which brought valuable perspectives. However, the challenge was to combine our expertise effectively. <br/><br/>Our mentors played a crucial role in shaping our concept by giving us helpful feedback throughout the project. Their input had a big impact on our final idea. <br/><br/>Personally, one of the most important things I learned from this experience was how to work effectively with people from different cultures and educational backgrounds. It was a chance for me to improve my collaboration skills and be open to different ways of thinking.",
 };
 
 export default InternationalProjectData;

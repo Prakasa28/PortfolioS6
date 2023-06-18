@@ -10,7 +10,7 @@ function App() {
       <Routes>
         {/* Other routes */}
         <Route path="/groupProject" element={<GroupProject />} />
-        <Route path="/index" element={<Index />} />
+        <Route path="/" element={<Index />} />
         <Route path="/individualProject" element={<IndividualProject />} />
         <Route
           path="/internationalProject"
