@@ -12,6 +12,7 @@ import ProjectPlan from "../Pdf/GPprojectplan.pdf";
 import Prototype from "../Pdf/GPprototype.pdf";
 import C4model from "../Pdf/C4model.pdf";
 import UserTestReport from "../Pdf/usertestreport.pdf";
+import SubQuestoins from "../Pdf/GPsubquestions.pdf";
 
 function GroupProject() {
   return (
@@ -129,6 +130,110 @@ function GroupProject() {
                       <p className="font-bold"> View document</p>
                     </button>
                   </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <section id="Brainstrom-Sub-Questions">
+            <div className="flex flex-row flex-row-reverse gap-5 items-center">
+              <div style={{ flex: "1" }}>
+                <p className="text-xl text-dark-heading    font-bold">
+                  {groupProjectData.brainstromSubQuestions.question}
+                </p>
+                <br />
+                <div className="flex flex-row gap-2">
+                  <p className="text-lg text-dark-heading    font-bold">
+                    {groupProjectData.brainstromSubQuestions.subHeading}
+                  </p>
+                  <p className="text-lg text-dark-heading   ">
+                    {groupProjectData.brainstromSubQuestions.methods}
+                  </p>
+                </div>
+                <br />
+                <div className="flex flex-col gap-2">
+                  <p className="text-lg text-dark-heading    font-bold">
+                    {groupProjectData.brainstromSubQuestions.subheadingWhy}
+                  </p>
+                  <p className="text-lg text-dark-heading   ">
+                    {groupProjectData.brainstromSubQuestions.why}
+                  </p>
+                </div>
+                <br />
+                <div className="flex flex-col gap-2">
+                  <p className="text-lg text-dark-heading    font-bold">
+                    {groupProjectData.brainstromSubQuestions.subHeadingHow}
+                  </p>
+                  <p className="text-lg text-dark-heading   ">
+                    {groupProjectData.brainstromSubQuestions.how}
+                  </p>
+                </div>
+
+                <br />
+
+                <div className="flex flex-col gap-2">
+                  <p className="text-lg text-dark-heading    font-bold">
+                    {groupProjectData.brainstromSubQuestions.resultHeading}
+                  </p>
+                  <p className="text-lg text-dark-heading   ">
+                    {groupProjectData.brainstromSubQuestions.results}
+                  </p>
+                </div>
+                <br />
+
+                <div className="flex flex-col gap-2">
+                  <p className="text-lg text-dark-heading    font-bold">
+                    {groupProjectData.brainstromSubQuestions.conclusionHeading}
+                  </p>
+                  <p className="text-lg text-dark-heading   ">
+                    {groupProjectData.brainstromSubQuestions.conclusion}
+                  </p>
+                </div>
+
+                <br />
+                <div className="flex flex-col text-lg text-dark-heading    ">
+                  <div>
+                    <a
+                      href={SubQuestoins}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button
+                        className="bg-gradient"
+                        style={{
+                          fontSize: "16px",
+                          padding: "10px 20px",
+                          border: "none",
+                          borderRadius: "5px",
+                        }}
+                      >
+                        <p className="font-bold"> View document</p>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div style={{ width: "50%", flex: "1", alignItems: "center" }}>
+                <div className="flex flex-col">
+                  <div style={{ flex: "1", alignItems: "center" }}>
+                    <img
+                      src={groupProjectData.brainstromSubQuestions.image}
+                      alt="Prototype"
+                    />
+                  </div>
+                  <div style={{ flex: "1", alignItems: "center" }}>
+                    <IframeComponent
+                      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FbEwjKbB2OMDHxowklid8K0%2FResearch-Questions-Brainstorm%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DGqfs4xmkbnx8LYsy-1"
+                      title="Example"
+                      width="100%"
+                      height="300"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

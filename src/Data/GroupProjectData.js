@@ -10,6 +10,7 @@ import concept from "../assets/images/concept.png";
 import userflow from "../assets/images/userflow.png";
 import c4model from "../assets/images/C4.png";
 import userTest from "../assets/images/GPusertest.png";
+import subQuestionImage from "../assets/images/subquestions.png";
 import st1 from "../assets/images/ST1.png";
 import st2 from "../assets/images/ST2.png";
 import st3 from "../assets/images/ST3.png";
@@ -24,6 +25,23 @@ const groupProjectData = {
   group2: {
     heading: "Project Approach - Design thinking method",
     subHeading: "Discover phase",
+  },
+
+  brainstromSubQuestions: {
+    question: "Brainstorming research questions:",
+    subHeading: "Methods:",
+    methods: "Brainstorm ",
+    subheadingWhy: "Why:",
+    why: "Brainstorming was a helpful way to come up with sub-questions because it helped to generate ideas and overcome obstacles in thinking. When brainstormed as a group, it helped to combine everyone’s knowledge and ideas to create a wider and more thoughtful list of sub-questions. ",
+    subHeadingHow: "How:",
+    how: "Each person in the group thought of their own question based on the main research question, and we used a voting system to decide which questions were the best. After the voting, we grouped together similar questions and formed clusters. Then, as a group, we chose the most appropriate questions from those clusters.",
+    resultHeading: "Result: ",
+    results: "The sub question can be seen in the document below.",
+    conclusionHeading: "Conclusion/recommendation:",
+    conclusion:
+      "In conclusion, when we worked together to brainstorm and create sub-questions, it helped us in our research. These sub-questions will guide us as we explore the main research question thoroughly. They will show us the way and help us discover new things and gain more knowledge in the field.",
+
+    image: subQuestionImage,
   },
 
   introHeading: "Introduction",
